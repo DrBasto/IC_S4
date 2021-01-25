@@ -1,4 +1,4 @@
-# ProjektSem4
+# IC_S4
 This are the codes to my projekt of VHDL 4th sem
 
 ## The project
