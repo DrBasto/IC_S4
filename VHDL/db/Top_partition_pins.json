@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "txd_o",
+					"strict" : false
+				},
+				{
+					"name" : "tled_o",
+					"strict" : false
+				},
+				{
+					"name" : "sec_o",
+					"strict" : false
+				},
+				{
+					"name" : "sdo_o",
+					"strict" : false
+				},
+				{
+					"name" : "sdv_o",
+					"strict" : false
+				},
+				{
+					"name" : "stx_o",
+					"strict" : false
+				},
+				{
+					"name" : "red_o",
+					"strict" : false
+				},
+				{
+					"name" : "grn_o",
+					"strict" : false
+				},
+				{
+					"name" : "rb_o",
+					"strict" : false
+				},
+				{
+					"name" : "sound_o",
+					"strict" : false
+				},
+				{
+					"name" : "rb_i",
+					"strict" : false
+				},
+				{
+					"name" : "cp_i",
+					"strict" : false
+				},
+				{
+					"name" : "cl_i",
+					"strict" : false
+				},
+				{
+					"name" : "s3_i",
+					"strict" : false
+				},
+				{
+					"name" : "s1_i",
+					"strict" : false
+				},
+				{
+					"name" : "s2_i",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

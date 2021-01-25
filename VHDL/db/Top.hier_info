@@ -1,0 +1,493 @@
+|Top
+cp_i => debnc:db1.cp_i
+cp_i => debnc:db2.cp_i
+cp_i => debnc:db3.cp_i
+cp_i => clock_divider:top_clock_divider.cp_i
+cp_i => cu1:counting_unit.cp_i
+cp_i => event_logger:top_event_logger.cp_i
+cp_i => uat:uart.cp_i
+cp_i => interface:int.cp_i
+cp_i => toggl:tgl.cp_i
+rb_i => debnc:db1.rb_i
+rb_i => debnc:db2.rb_i
+rb_i => debnc:db3.rb_i
+rb_i => clock_divider:top_clock_divider.rb_i
+rb_i => cu1:counting_unit.rb_i
+rb_i => event_logger:top_event_logger.rb_i
+rb_i => uat:uart.rb_i
+rb_i => interface:int.rb_i
+rb_i => toggl:tgl.rb_i
+rb_i => rb_o.DATAIN
+cl_i => cu1:counting_unit.cl_i
+cl_i => event_logger:top_event_logger.cl_i
+s1_i => debnc:db1.unb_i
+s2_i => debnc:db2.unb_i
+s3_i => debnc:db3.unb_i
+txd_o << uat:uart.txd_o
+tled_o << uat:uart.tled_o
+sec_o << toggl:tgl.res_o
+sdo_o << interface:int.sdo_o
+sdv_o << interface:int.sdv_o
+stx_o << interface:int.stx_o
+red_o << event_logger:top_event_logger.red_o
+grn_o << event_logger:top_event_logger.grn_o
+rb_o << rb_i.DB_MAX_OUTPUT_PORT_TYPE
+sound_o << event_logger:top_event_logger.sound_o
+
+
+|Top|debnc:db1
+cp_i => sig_s.CLK
+cp_i => cnt_s[0].CLK
+cp_i => cnt_s[1].CLK
+cp_i => cnt_s[2].CLK
+cp_i => cnt_s[3].CLK
+cp_i => cnt_s[4].CLK
+cp_i => cnt_s[5].CLK
+cp_i => cnt_s[6].CLK
+cp_i => cnt_s[7].CLK
+cp_i => cnt_s[8].CLK
+cp_i => cnt_s[9].CLK
+cp_i => cnt_s[10].CLK
+cp_i => cnt_s[11].CLK
+cp_i => cnt_s[12].CLK
+cp_i => cnt_s[13].CLK
+cp_i => cnt_s[14].CLK
+cp_i => cnt_s[15].CLK
+cp_i => cnt_s[16].CLK
+cp_i => cnt_s[17].CLK
+cp_i => cnt_s[18].CLK
+rb_i => cnt_s[0].ACLR
+rb_i => cnt_s[1].ACLR
+rb_i => cnt_s[2].ACLR
+rb_i => cnt_s[3].ACLR
+rb_i => cnt_s[4].ACLR
+rb_i => cnt_s[5].ACLR
+rb_i => cnt_s[6].ACLR
+rb_i => cnt_s[7].ACLR
+rb_i => cnt_s[8].ACLR
+rb_i => cnt_s[9].ACLR
+rb_i => cnt_s[10].ACLR
+rb_i => cnt_s[11].ACLR
+rb_i => cnt_s[12].ACLR
+rb_i => cnt_s[13].ACLR
+rb_i => cnt_s[14].ACLR
+rb_i => cnt_s[15].ACLR
+rb_i => cnt_s[16].ACLR
+rb_i => cnt_s[17].ACLR
+rb_i => cnt_s[18].ACLR
+rb_i => sig_s.ENA
+unb_i => process_0.IN1
+unb_i => sig_s.DATAB
+deb_o <= sig_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|debnc:db2
+cp_i => sig_s.CLK
+cp_i => cnt_s[0].CLK
+cp_i => cnt_s[1].CLK
+cp_i => cnt_s[2].CLK
+cp_i => cnt_s[3].CLK
+cp_i => cnt_s[4].CLK
+cp_i => cnt_s[5].CLK
+cp_i => cnt_s[6].CLK
+cp_i => cnt_s[7].CLK
+cp_i => cnt_s[8].CLK
+cp_i => cnt_s[9].CLK
+cp_i => cnt_s[10].CLK
+cp_i => cnt_s[11].CLK
+cp_i => cnt_s[12].CLK
+cp_i => cnt_s[13].CLK
+cp_i => cnt_s[14].CLK
+cp_i => cnt_s[15].CLK
+cp_i => cnt_s[16].CLK
+cp_i => cnt_s[17].CLK
+cp_i => cnt_s[18].CLK
+rb_i => cnt_s[0].ACLR
+rb_i => cnt_s[1].ACLR
+rb_i => cnt_s[2].ACLR
+rb_i => cnt_s[3].ACLR
+rb_i => cnt_s[4].ACLR
+rb_i => cnt_s[5].ACLR
+rb_i => cnt_s[6].ACLR
+rb_i => cnt_s[7].ACLR
+rb_i => cnt_s[8].ACLR
+rb_i => cnt_s[9].ACLR
+rb_i => cnt_s[10].ACLR
+rb_i => cnt_s[11].ACLR
+rb_i => cnt_s[12].ACLR
+rb_i => cnt_s[13].ACLR
+rb_i => cnt_s[14].ACLR
+rb_i => cnt_s[15].ACLR
+rb_i => cnt_s[16].ACLR
+rb_i => cnt_s[17].ACLR
+rb_i => cnt_s[18].ACLR
+rb_i => sig_s.ENA
+unb_i => process_0.IN1
+unb_i => sig_s.DATAB
+deb_o <= sig_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|debnc:db3
+cp_i => sig_s.CLK
+cp_i => cnt_s[0].CLK
+cp_i => cnt_s[1].CLK
+cp_i => cnt_s[2].CLK
+cp_i => cnt_s[3].CLK
+cp_i => cnt_s[4].CLK
+cp_i => cnt_s[5].CLK
+cp_i => cnt_s[6].CLK
+cp_i => cnt_s[7].CLK
+cp_i => cnt_s[8].CLK
+cp_i => cnt_s[9].CLK
+cp_i => cnt_s[10].CLK
+cp_i => cnt_s[11].CLK
+cp_i => cnt_s[12].CLK
+cp_i => cnt_s[13].CLK
+cp_i => cnt_s[14].CLK
+cp_i => cnt_s[15].CLK
+cp_i => cnt_s[16].CLK
+cp_i => cnt_s[17].CLK
+cp_i => cnt_s[18].CLK
+rb_i => cnt_s[0].ACLR
+rb_i => cnt_s[1].ACLR
+rb_i => cnt_s[2].ACLR
+rb_i => cnt_s[3].ACLR
+rb_i => cnt_s[4].ACLR
+rb_i => cnt_s[5].ACLR
+rb_i => cnt_s[6].ACLR
+rb_i => cnt_s[7].ACLR
+rb_i => cnt_s[8].ACLR
+rb_i => cnt_s[9].ACLR
+rb_i => cnt_s[10].ACLR
+rb_i => cnt_s[11].ACLR
+rb_i => cnt_s[12].ACLR
+rb_i => cnt_s[13].ACLR
+rb_i => cnt_s[14].ACLR
+rb_i => cnt_s[15].ACLR
+rb_i => cnt_s[16].ACLR
+rb_i => cnt_s[17].ACLR
+rb_i => cnt_s[18].ACLR
+rb_i => sig_s.ENA
+unb_i => process_0.IN1
+unb_i => sig_s.DATAB
+deb_o <= sig_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|clock_divider:top_clock_divider
+cp_i => sect_s[0].CLK
+cp_i => sect_s[1].CLK
+cp_i => sect_s[2].CLK
+cp_i => sect_s[3].CLK
+cp_i => sect_s[4].CLK
+cp_i => sect_s[5].CLK
+cp_i => sect_s[6].CLK
+cp_i => sect_s[7].CLK
+cp_i => sect_s[8].CLK
+cp_i => sect_s[9].CLK
+cp_i => sect_s[10].CLK
+cp_i => sect_s[11].CLK
+cp_i => sect_s[12].CLK
+cp_i => sect_s[13].CLK
+cp_i => sect_s[14].CLK
+cp_i => sect_s[15].CLK
+cp_i => sect_s[16].CLK
+cp_i => sect_s[17].CLK
+cp_i => sect_s[18].CLK
+cp_i => sect_s[19].CLK
+cp_i => sect_s[20].CLK
+cp_i => sect_s[21].CLK
+cp_i => sect_s[22].CLK
+cp_i => sect_s[23].CLK
+cp_i => brt_s[0].CLK
+cp_i => brt_s[1].CLK
+cp_i => brt_s[2].CLK
+cp_i => brt_s[3].CLK
+cp_i => brt_s[4].CLK
+cp_i => brt_s[5].CLK
+cp_i => brt_s[6].CLK
+cp_i => brt_s[7].CLK
+cp_i => brt_s[8].CLK
+cp_i => brt_s[9].CLK
+cp_i => brt_s[10].CLK
+rb_i => sect_s[0].ACLR
+rb_i => sect_s[1].ACLR
+rb_i => sect_s[2].ACLR
+rb_i => sect_s[3].ACLR
+rb_i => sect_s[4].ACLR
+rb_i => sect_s[5].ACLR
+rb_i => sect_s[6].ACLR
+rb_i => sect_s[7].ACLR
+rb_i => sect_s[8].ACLR
+rb_i => sect_s[9].ACLR
+rb_i => sect_s[10].ACLR
+rb_i => sect_s[11].ACLR
+rb_i => sect_s[12].ACLR
+rb_i => sect_s[13].ACLR
+rb_i => sect_s[14].ACLR
+rb_i => sect_s[15].ACLR
+rb_i => sect_s[16].ACLR
+rb_i => sect_s[17].ACLR
+rb_i => sect_s[18].ACLR
+rb_i => sect_s[19].ACLR
+rb_i => sect_s[20].ACLR
+rb_i => sect_s[21].ACLR
+rb_i => sect_s[22].ACLR
+rb_i => sect_s[23].ACLR
+rb_i => brt_s[0].ACLR
+rb_i => brt_s[1].ACLR
+rb_i => brt_s[2].ACLR
+rb_i => brt_s[3].ACLR
+rb_i => brt_s[4].ACLR
+rb_i => brt_s[5].ACLR
+rb_i => brt_s[6].ACLR
+rb_i => brt_s[7].ACLR
+rb_i => brt_s[8].ACLR
+rb_i => brt_s[9].ACLR
+rb_i => brt_s[10].ACLR
+br_s <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+sec_o <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|cu1:counting_unit
+cp_i => headcount_s[0].CLK
+cp_i => headcount_s[1].CLK
+cp_i => headcount_s[2].CLK
+cp_i => headcount_s[3].CLK
+cp_i => headcount_s[4].CLK
+cp_i => headcount_s[5].CLK
+rb_i => run_counter.IN0
+cl_i => run_counter.IN1
+cup_s => run_counter.IN0
+cup_s => run_counter.IN0
+cdown_s => run_counter.IN1
+cdown_s => run_counter.IN1
+headcount_o[0] <= headcount_s[0].DB_MAX_OUTPUT_PORT_TYPE
+headcount_o[1] <= headcount_s[1].DB_MAX_OUTPUT_PORT_TYPE
+headcount_o[2] <= headcount_s[2].DB_MAX_OUTPUT_PORT_TYPE
+headcount_o[3] <= headcount_s[3].DB_MAX_OUTPUT_PORT_TYPE
+headcount_o[4] <= headcount_s[4].DB_MAX_OUTPUT_PORT_TYPE
+headcount_o[5] <= headcount_s[5].DB_MAX_OUTPUT_PORT_TYPE
+maxr_s <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|event_logger:top_event_logger
+cp_i => logger_fsm:EL1.cp_i
+cp_i => keeper_fsm:EL2.cp_i
+rb_i => logger_fsm:EL1.rb_i
+rb_i => keeper_fsm:EL2.rb_i
+cl_i => keeper_fsm:EL2.cl_i
+s1_i => logger_fsm:EL1.s1_i
+s2_i => logger_fsm:EL1.s2_i
+s3_i => logger_fsm:EL1.s3_i
+done_s => logger_fsm:EL1.done_s
+done_s => keeper_fsm:EL2.done_s
+finish_s => logger_fsm:EL1.finish_s
+finish_s => keeper_fsm:EL2.finish_s
+maxr_s => keeper_fsm:EL2.maxr_s
+cup_s <= logger_fsm:EL1.cup_s
+cdown_s <= logger_fsm:EL1.cdown_s
+event_s[0] <= keeper_fsm:EL2.event_s[0]
+event_s[1] <= keeper_fsm:EL2.event_s[1]
+detect_s <= keeper_fsm:EL2.detect_s
+red_o <= keeper_fsm:EL2.red_o
+grn_o <= keeper_fsm:EL2.grn_o
+sound_o <= keeper_fsm:EL2.sound_o
+
+
+|Top|event_logger:top_event_logger|logger_fsm:EL1
+cp_i => now_st~1.DATAIN
+rb_i => now_st~3.DATAIN
+s1_i => nxt_st.OUTPUTSELECT
+s1_i => nxt_st.OUTPUTSELECT
+s1_i => nxt_st.DATAA
+s1_i => nxt_st.DATAA
+s1_i => Selector1.IN5
+s1_i => nxt_st.exit_st.DATAB
+s1_i => nxt_st.DATAA
+s1_i => nxt_st.DATAA
+s2_i => nxt_st.OUTPUTSELECT
+s2_i => nxt_st.OUTPUTSELECT
+s2_i => nxt_st.OUTPUTSELECT
+s2_i => nxt_st.OUTPUTSELECT
+s2_i => Selector2.IN3
+s2_i => Selector4.IN3
+s3_i => nxt_st.DATAA
+s3_i => nxt_st.DATAA
+s3_i => nxt_st.OUTPUTSELECT
+s3_i => nxt_st.OUTPUTSELECT
+s3_i => nxt_st.entry_st.DATAB
+s3_i => nxt_st.DATAA
+s3_i => nxt_st.DATAA
+done_s => ~NO_FANOUT~
+finish_s => ~NO_FANOUT~
+cup_s <= cup_s.DB_MAX_OUTPUT_PORT_TYPE
+cdown_s <= cdown_s.DB_MAX_OUTPUT_PORT_TYPE
+enter_s <= enter_s.DB_MAX_OUTPUT_PORT_TYPE
+exit_s <= exit_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|event_logger:top_event_logger|keeper_fsm:EL2
+cp_i => now_st~1.DATAIN
+rb_i => clkd.IN0
+cl_i => clkd.IN1
+enter_s => st_trans.IN0
+enter_s => st_trans.IN0
+exit_s => st_trans.IN1
+exit_s => st_trans.IN1
+maxr_s => nxt_st.OUTPUTSELECT
+maxr_s => nxt_st.OUTPUTSELECT
+maxr_s => nxt_st.OUTPUTSELECT
+maxr_s => Selector1.IN3
+done_s => st_trans.IN0
+done_s => st_trans.IN0
+finish_s => st_trans.IN1
+finish_s => st_trans.IN1
+detect_s <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+event_s[0] <= event_s.DB_MAX_OUTPUT_PORT_TYPE
+event_s[1] <= event_s.DB_MAX_OUTPUT_PORT_TYPE
+red_o <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+grn_o <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+sound_o <= sound_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|uat:uart
+cp_i => control_fsm:ufsm1.cp_i
+cp_i => transmit_fsm:ufsm2.cp_i
+rb_i => control_fsm:ufsm1.rb_i
+rb_i => transmit_fsm:ufsm2.rb_i
+detect_s => control_fsm:ufsm1.detect_s
+br_s => transmit_fsm:ufsm2.br_s
+headcount_s[0] => transmit_fsm:ufsm2.headcount_s[0]
+headcount_s[1] => transmit_fsm:ufsm2.headcount_s[1]
+headcount_s[2] => transmit_fsm:ufsm2.headcount_s[2]
+headcount_s[3] => transmit_fsm:ufsm2.headcount_s[3]
+headcount_s[4] => transmit_fsm:ufsm2.headcount_s[4]
+headcount_s[5] => transmit_fsm:ufsm2.headcount_s[5]
+event_s[0] => transmit_fsm:ufsm2.event_s[0]
+event_s[1] => transmit_fsm:ufsm2.event_s[1]
+txd_o <= transmit_fsm:ufsm2.txd_s
+tled_o <= transmit_fsm:ufsm2.tled_s
+done_o <= transmit_fsm:ufsm2.done_s
+
+
+|Top|uat:uart|control_fsm:ufsm1
+cp_i => now_st.CLK
+rb_i => now_st.ACLR
+detect_s => nxt_st.DATAB
+done_s => nxt_st.DATAA
+start_s <= now_st.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|uat:uart|transmit_fsm:ufsm2
+cp_i => now_st~1.DATAIN
+rb_i => now_st~3.DATAIN
+br_s => st_trans.IN0
+br_s => Selector0.IN3
+br_s => Selector2.IN3
+br_s => Selector3.IN3
+br_s => Selector4.IN3
+br_s => Selector5.IN3
+br_s => Selector6.IN3
+br_s => Selector7.IN3
+br_s => Selector8.IN3
+br_s => Selector9.IN3
+br_s => Selector10.IN3
+br_s => Selector1.IN2
+br_s => Selector2.IN1
+br_s => Selector3.IN1
+br_s => Selector4.IN1
+br_s => Selector5.IN1
+br_s => Selector6.IN1
+br_s => Selector7.IN1
+br_s => Selector8.IN1
+br_s => Selector9.IN1
+br_s => Selector10.IN1
+start_s => st_trans.IN1
+event_s[0] => Selector11.IN4
+event_s[1] => Selector11.IN3
+headcount_s[0] => Selector11.IN10
+headcount_s[1] => Selector11.IN9
+headcount_s[2] => Selector11.IN8
+headcount_s[3] => Selector11.IN7
+headcount_s[4] => Selector11.IN6
+headcount_s[5] => Selector11.IN5
+txd_s <= Selector11.DB_MAX_OUTPUT_PORT_TYPE
+tled_s <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+done_s <= done_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|interface:int
+cp_i => operator_fsm:If1.cp_i
+cp_i => sender_fsm:If2.cp_i
+rb_i => operator_fsm:If1.rb_i
+rb_i => sender_fsm:If2.rb_i
+br_s => sender_fsm:If2.br_s
+event_s[0] => sender_fsm:If2.event_s[0]
+event_s[1] => sender_fsm:If2.event_s[1]
+headcount_s[0] => sender_fsm:If2.headcount_s[0]
+headcount_s[1] => sender_fsm:If2.headcount_s[1]
+headcount_s[2] => sender_fsm:If2.headcount_s[2]
+headcount_s[3] => sender_fsm:If2.headcount_s[3]
+headcount_s[4] => sender_fsm:If2.headcount_s[4]
+headcount_s[5] => sender_fsm:If2.headcount_s[5]
+detect_s => operator_fsm:If1.detect_s
+sdo_o <= sender_fsm:If2.sdo_o
+sdv_o <= sender_fsm:If2.sdv_o
+stx_o <= sender_fsm:If2.stx_o
+finish_o <= sender_fsm:If2.finish_s
+
+
+|Top|interface:int|operator_fsm:If1
+cp_i => now_st.CLK
+rb_i => now_st.ACLR
+detect_s => nxt_st.DATAB
+finish_s => nxt_st.DATAA
+send_s <= now_st.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|interface:int|sender_fsm:If2
+cp_i => now_st~1.DATAIN
+rb_i => now_st~3.DATAIN
+br_s => st_trans.IN0
+br_s => Selector0.IN3
+br_s => Selector2.IN3
+br_s => Selector3.IN3
+br_s => Selector4.IN3
+br_s => Selector5.IN3
+br_s => Selector6.IN3
+br_s => Selector7.IN3
+br_s => Selector8.IN3
+br_s => Selector9.IN3
+br_s => Selector10.IN3
+br_s => Selector1.IN2
+br_s => Selector2.IN1
+br_s => Selector3.IN1
+br_s => Selector4.IN1
+br_s => Selector5.IN1
+br_s => Selector6.IN1
+br_s => Selector7.IN1
+br_s => Selector8.IN1
+br_s => Selector9.IN1
+br_s => Selector10.IN1
+send_s => st_trans.IN1
+event_s[0] => Selector11.IN4
+event_s[1] => Selector11.IN3
+headcount_s[0] => Selector11.IN10
+headcount_s[1] => Selector11.IN9
+headcount_s[2] => Selector11.IN8
+headcount_s[3] => Selector11.IN7
+headcount_s[4] => Selector11.IN6
+headcount_s[5] => Selector11.IN5
+sdo_o <= Selector11.DB_MAX_OUTPUT_PORT_TYPE
+sdv_o <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+stx_o <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+finish_s <= finish_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Top|toggl:tgl
+cp_i => tog_s.CLK
+rb_i => tog_s.ACLR
+sig_i => tog_s.ENA
+res_o <= tog_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
